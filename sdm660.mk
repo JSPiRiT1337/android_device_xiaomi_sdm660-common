@@ -37,9 +37,12 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap \
     $(LOCAL_PATH)/overlay-system
 
-# Soong namespaces
+# Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+PRODUCT_BOARD_PLATFORM := sdm660
+PRODUCT_USES_QCOM_HARDWARE := true
+
 
 # Permissions
 PRODUCT_COPY_FILES += \
